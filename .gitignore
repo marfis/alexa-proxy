@@ -1,0 +1,7 @@
+node_modules
+dist
+config.yml
+package-lock.json
+event.json
+.idea
+*.iml
