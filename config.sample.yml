@@ -1,0 +1,7 @@
+arn: arn:aws:lambda:XX-XXXX-X:YYYYYYYYYYY:function:myfunction
+
+endpoints:
+  amzn1.ask.skill.88888888-4444-4444-4444-121212121212:
+    api: "http://localhost:8080/endpoint"
+    headers:
+      x-ha-access: "apiPassword"
