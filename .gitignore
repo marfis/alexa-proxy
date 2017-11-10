@@ -5,3 +5,4 @@ package-lock.json
 event.json
 .idea
 *.iml
+alexa-proxy*.tgz
