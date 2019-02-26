@@ -1,8 +1,8 @@
 {
   "name": "alexa-proxy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "AWS Lambda Proxy Script for Alexa Skills",
-  "main": "index.js",  
+  "main": "index.js",
   "repository": "github:marfis/alexa-proxy",
   "keywords": [
     "lambda",
@@ -14,11 +14,11 @@
   "author": "Marco Fister <marco@marfis.org>",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-aws-lambda": "^0.13.0"
   },
   "dependencies": {
-    "aws-arn-parser": "^1.0.0",
+    "aws-arn-parser": "^1.0.1",
     "read-yaml": "^1.1.0"
   }
 }
