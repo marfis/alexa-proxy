@@ -5,12 +5,10 @@ var fs = require('fs');
 
 exports.handler = function (json, context) {
     try {
+        console.log(json);
         var config = readYaml.sync('config.yml');
 
-        // Look up the endpoint configuration based on the appId
-        var endpoint = config.endpoints[json.session.application.applicationId];
-
-        var url = endpoint.api;
+        var url = config.endpoint.api;
         if (!url) { context.fail("No url found for application id"); }
         var parts = URLParser.parse(url);
         var post_data = JSON.stringify(json);
@@ -18,8 +16,9 @@ exports.handler = function (json, context) {
         var headers = {
             'Content-Type': 'application/json',
             'Content-Length': post_data.length,
+
         };
-        for(var header in endpoint.headers) headers[header]=endpoint.headers[header];
+        for(var header in config.endpoint.headers) headers[header]=config.endpoint.headers[header];
 
         // An object of options to indicate where to post to
         var post_options = {
