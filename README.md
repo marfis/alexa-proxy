@@ -1,6 +1,6 @@
 # Alexa Proxy (NodeJS)
 
-NodeJS script that works as a proxy between Amazon Alexa in the cloud and a local running smart home server consuming JSON (e.g. Home Assistant).
+NodeJS lambda that works as a proxy between Amazon Alexa and some machine running smart home server consuming JSON (e.g. Home Assistant).
 
 * Supports multiple skill<->endpoint configurations.
 * You can send credentials using custom headers.
@@ -17,9 +17,9 @@ npm install
 
 Rename config.sample.yml to config.yml.
 
-Whithin this file, you can configure
+Within this file, you can configure
 
-* Endpoints
+* Endpoint
 * Custom headers
 
 ## Deploy

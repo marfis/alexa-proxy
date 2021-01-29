@@ -1,6 +1,7 @@
 arn: arn:aws:lambda:XX-XXXX-X:YYYYYYYYYYY:function:myfunction
 
-endpoints:
+endpoint:
   api: "http://localhost:8080/endpoint"
   headers:
     Authorization: "Bearer eyAAA.eyBBB.eyCCC"
+

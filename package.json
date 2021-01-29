@@ -1,6 +1,6 @@
 {
   "name": "alexa-proxy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "AWS Lambda Proxy Script for Alexa Skills",
   "main": "index.js",
   "repository": "github:marfis/alexa-proxy",
